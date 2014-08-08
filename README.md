@@ -12,6 +12,16 @@ hitbox is a Go client library for accessing the hitbox.tv API.
 import "github.com/rojters/hitbox"
 ```
 
+## Status ##
+
+- [ ] Media
+- [ ] User
+- [ ] Followers
+- [X] Games
+- [ ] Teams
+- [ ] Token
+- [ ] Ingesting
+
 ## License ##
 
 MIT
