@@ -23,19 +23,19 @@ type GamesResponse struct {
 
 // Request represents the original request as it was received by the hitbox.tv API.
 type Request struct {
-	This *string `json:"this,omitempty"`
+	This string `json:"this,omitempty"`
 }
 
 // Category represents a game category.
 type Category struct {
-	CategoryID        *int64     `json:"category_id,omitempty,string"`
-	CategoryName      *string    `json:"category_name,omitempty"`
-	CategoryNameShort *string    `json:"category_name_short,omitempty"`
-	CategorySeoKey    *string    `json:"category_seo_key,omitempty"`
-	CategoryViewers   *int64     `json:"category_viewers,omitempty,string"`
-	CategoryLogoSmall *string    `json:"category_logo_small,omitempty"`
-	CategoryLogolarge *string    `json:"category_logo_large,omitempty"`
-	CategoryUpdated   *Timestamp `json:"category_updated,omitempty"`
+	CategoryID        int64     `json:"category_id,omitempty,string"`
+	CategoryName      string    `json:"category_name,omitempty"`
+	CategoryNameShort string    `json:"category_name_short,omitempty"`
+	CategorySeoKey    string    `json:"category_seo_key,omitempty"`
+	CategoryViewers   int64     `json:"category_viewers,omitempty,string"`
+	CategoryLogoSmall string    `json:"category_logo_small,omitempty"`
+	CategoryLogolarge string    `json:"category_logo_large,omitempty"`
+	CategoryUpdated   Timestamp `json:"category_updated,omitempty"`
 }
 
 // Timestamp represents a hitbox.tv time that can be unmarshalled from a JSON string.

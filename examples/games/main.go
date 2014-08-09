@@ -18,7 +18,7 @@ func main() {
 	fmt.Println("The top 100 games on hitbox.tv sorted by number of viewers")
 
 	for i, g := range games.Categories {
-		fmt.Printf("[%d] %s | current viewers = %d\n", i+1, *g.CategoryName, *g.CategoryViewers)
+		fmt.Printf("[%d] %s | current viewers = %d, updated on = %s\n", i+1, g.CategoryName, g.CategoryViewers, g.CategoryUpdated)
 	}
 
 }
